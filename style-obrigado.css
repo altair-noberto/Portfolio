@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;400;500;600&display=swap');
+
+*{
+    margin-top: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: -moz-linear-gradient(to top, #06110f, #000);
+}
+
+.mensagem{
+    margin-bottom: 500px;
+    color: #2b8d7d;
+    font-size: 24px;
+}
+
+.texto{
+  position: absolute;
+  text-align: center;
+  display: block;
+}
+
+.texto h2{
+    position: relative;
+    font-size: 5vw;
+    color: #252839;
+    -webkit-text-stroke: 0.5vw rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.texto h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #2b8d7d;
+    -webkit-text-stroke: 0vw #000000;
+    border-radius: 2px solid #2b8d7d;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
