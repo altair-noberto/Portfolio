@@ -610,23 +610,7 @@ h3.my-profession{
     color: var(--text-black-700);
 }
 
-.service{
-    display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background: var(--bg-black-100);
-	overflow: hidden;
-}
-.service .container
-{
-	position: relative;
-	width: 1050px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	transform: skewY(-10deg);
-}
+
 .service .container .card
 {
 	position: relative;
