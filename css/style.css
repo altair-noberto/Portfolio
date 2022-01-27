@@ -610,6 +610,22 @@ h3.my-profession{
     color: var(--text-black-700);
 }
 .service{
+ display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: var(--bg-black-100);
+overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
 
 
 
