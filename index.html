@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Altair</title>
+        <!-- ===== Arquivos CSS ===== -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/color-1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- ===== Trocar Estilos =====-->
+        <link rel="stylesheet" href="css/color-1.css" class="alternate-style" title="color-1" disabled>
+        <link rel="stylesheet" href="css/color-2.css" class="alternate-style" title="color-2" disabled>
+        <link rel="stylesheet" href="css/color-3.css" class="alternate-style" title="color-3" disabled>
+        <link rel="stylesheet" href="css/color-4.css" class="alternate-style" title="color-4">
+        <link rel="stylesheet" href="css/color-5.css" class="alternate-style" title="color-5" disabled>
+        <link rel="stylesheet" href="css/trocar-estilo.css">
+        <link rel="icon" HREF="imagens/perfil.png">
+        <!--===== Script apagar formulario =====-->
+        <script>
+            function apagaForm() {
+                document.getElementById('form').reset();
+            }
+        </script>
+    </head>
+    <body>
+        <!-- ===== Container principal inicio ===== -->
+        <div class="main-container">
+            <!-- ===== Começo aside =====-->
+            <div class="aside">
+                <div class="logo">
+                    <a href="#home"><span>A</span>ltair</a>
+                </div>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+                <ul class="nav">
+                    <li><a href="#home" class="active" data-text="Home"><i class="fa fa-home"></i> Inicio</a></li>
+                    <li><a href="#about"><i class="fa fa-user" data-text="Sobre"></i> Sobre</a></li>
+                    <li><a href="#services"><i class="fa fa-list" data-text="Especialidades"></i> Especialidades</a></li>
+                    <li><a href="#portfolio"><i class="fa fa-briefcase" data-text="Portfolio"></i> Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments" data-text="Contato"></i> Contato</a></li>
+                </ul>
+            </div>
+            <!-- ===== Final aside =====-->
+            <!-- ===== Conteudo principal começo =====-->
+            <div class="main-content">
+                <!--home começo-->
+                <section class="home active section" id="home">
+                    <div class="container">
+                        <div class="row">
+                            <div class="home-info padd-15">
+                                <h3 class="hello">Ola, me chamo <span class="name">Altair Noberto</span></h3>
+                                <h3 class="my-profession">E sou <span class="typing">gostoso</span></h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae libero cupiditate nam temporibus voluptates rem architecto possimus? Modi doloremque optio asperiores fuga harum facere!</p>
+                                <a href="pdf/CurriculoAltair - Dark.pdf" download="CurriculoAltair" class="btn btn-1">Baixar CV</a>
+                            </div>
+                            <div class="home-img padd-15">
+                                <img src="imagens/home.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--home fim-->
+                 <!-- ===== Sobre Começo =====-->
+                 <section class="about section" id="about">
+                     <div class="container">
+                         <div class="row">
+                             <div class="section-title padd-15">
+                                 <h2>Sobre mim</h2>
+                             </div>
+                         </div>
+                         <div class="row">
+                             <div class="about-content padd-15">
+                                 <div class="row">
+                                     <div class="about-text">
+                                         <h3>Sou Altair e sou <span>doido</span></h3>
+                                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta distinctio beatae porro doloremque impedit eligendi aliquam nisi temporibus, architecto exercitationem recusandae quaerat quidem quo consectetur tempora eaque expedita quasi nulla?</p>
+                                     </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="personal-info padd-15">
+                                         <div class="row">
+                                             <div class="info-item padd-15">
+                                                 <p>Aniversario: <span>01/11/2001</span></p>
+                                             </div>
+                                             <div class="info-item padd-15">
+                                                <p>Idade: <span>20</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>GitHub: <span>github.com/RavenousII/</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Email: <span>altairnoberto@outlook.com.br</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Formação: <span>Superior cursando</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Telefone: <span>(11)99197-3628</span></p>
+                                            </div>
+                                            <div class="info-item padd-15">
+                                                <p>Cidade: <span>Osasco</span></p>
+                                            </div>
+                                         </div>
+                                         <div class="row">
+                                         </div>
+                                     </div>
+                                     <div class="skills padd-15">
+                                         <div class="row">
+                                            <h6>Habilidades</h6>
+                                             <div class="skills-item padd-15">
+                                                 <h5>CSS</h5>
+                                                 <div class="progress">
+                                                     <div class="progress-in" style="width: 86%;"></div>
+                                                     <div class="skill-percent"></div>
+                                                 </div>
+                                             </div>
+                                             <div class="skills-item padd-15">
+                                                <h5>Photoshop</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 76%;"></div>
+                                                    <div class="skill-percent"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skills-item padd-15">
+                                                <h5>JS</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 37%;"></div>
+                                                    <div class="skill-percent"></div>
+                                                </div>
+                                            </div>
+                                            <div class="skills-item padd-15">
+                                                <h5>HTML</h5>
+                                                <div class="progress">
+                                                    <div class="progress-in" style="width: 91%;"></div>
+                                                    <div class="skill-percent"></div>
+                                                </div>
+                                            </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                                 <div class="education padd-15">
+                                     <h3 class="title">Formação</h3>
+                                     <div class="row">
+                                         <div class="timeline-box padd-15">
+                                             <div class="timeline shadow-dark">
+                                                 <!-- ===== Linha do tempo =====-->
+                                                 <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2019 - 2022
+                                                    </h3>
+                                                    <h4 class="timeline-title">Analise e desenvolvimento de Sistemas</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quasi, et, accusamus eaque enim, delectus numquam exercitationem odit dicta atque cum alias repellat molestias accusantium architecto.</p>
+                                                </div>
+                                                 <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2019 - 2022
+                                                    </h3>
+                                                    <h4 class="timeline-title">Analise e desenvolvimento de Sistemas</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quasi, et, accusamus eaque enim, delectus numquam exercitationem odit dicta atque cum alias repellat molestias accusantium architecto.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2019 - 2022
+                                                    </h3>
+                                                    <h4 class="timeline-title">Analise e desenvolvimento de Sistemas</h4>
+                                                    <p class="timeline-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quasi, et, accusamus eaque enim, delectus numquam exercitationem odit dicta atque cum alias repellat molestias accusantium architecto.</p>
+                                                </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="experience padd-15">
+                                    <h3 class="title">Experiência</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- ===== Linha do tempo =====-->
+                                                <div class="timeline-item">
+                                                   <div class="circle-dot"></div>
+                                                   <h3 class="timeline-date">
+                                                       <i class="fa fa-calendar"></i> 2019 - 2022
+                                                   </h3>
+                                                   <h4 class="timeline-title">Analise e desenvolvimento de Sistemas</h4>
+                                                   <p class="timeline-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quasi, et, accusamus eaque enim, delectus numquam exercitationem odit dicta atque cum alias repellat molestias accusantium architecto.</p>
+                                               </div>
+                                                <div class="timeline-item">
+                                                   <div class="circle-dot"></div>
+                                                   <h3 class="timeline-date">
+                                                       <i class="fa fa-calendar"></i> 2019 - 2022
+                                                   </h3>
+                                                   <h4 class="timeline-title">Analise e desenvolvimento de Sistemas</h4>
+                                                   <p class="timeline-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quasi, et, accusamus eaque enim, delectus numquam exercitationem odit dicta atque cum alias repellat molestias accusantium architecto.</p>
+                                               </div>
+                                               <div class="timeline-item">
+                                                   <div class="circle-dot"></div>
+                                                   <h3 class="timeline-date">
+                                                       <i class="fa fa-calendar"></i> 2019 - 2022
+                                                   </h3>
+                                                   <h4 class="timeline-title">Analise e desenvolvimento de Sistemas</h4>
+                                                   <p class="timeline-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quasi, et, accusamus eaque enim, delectus numquam exercitationem odit dicta atque cum alias repellat molestias accusantium architecto.</p>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                         </div>
+                     </div>
+                 </section>
+                 <!-- ===== Sobre Fim =====-->
+                 <!-- ===== Serviços começo =====-->
+                 <section class="service section" id="services">
+                    <div class="container">
+                          <div class="row">
+                            <!-- ===== Service item Start ====== -->
+                            <!---
+                            <div class="service-item padd-15">
+                              <div class="service-item-inner">
+                                <div class="icon">
+                                  <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque.</p>
+                              </div>
+                            </div>-->
+                            <!-- ===== Service item End ====== -->
+                             <!-- ===== Service item Start ====== -->
+                             <!---<div class="service-item padd-15">
+                              <div class="service-item-inner">
+                                <div class="icon">
+                                  <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque.</p>
+                              </div>
+                            </div>-->
+                            <!-- ===== Service item End ====== -->
+                             <!-- ===== Service item Start ====== -->
+                             <!---<div class="service-item padd-15">
+                              <div class="service-item-inner">
+                                <div class="icon">
+                                  <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Web Design</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil velit ab itaque.</p>
+                              </div>
+                            </div>-->
+                            <!-- ===== Service item End ====== -->
+                          </div>
+                        <div class="card">
+                          <div class="imgbx">
+                            <img src="/Portfolio/imagens/design.png">
+                            <h3>Design</h3>
+                          </div>
+                          <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="imgbx">
+                            <img src="/Portfolio/imagens/code.png">
+                            <h3>Programação</h3>
+                          </div>
+                          <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="imgbx">
+                            <img src="/Portfolio/imagens/launch.png">
+                            <h3>Tratamento de imagens</h3>
+                          </div>
+                          <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                          </div>
+                        </div>
+                      </div>
+                 </section>
+                 <!-- ===== Serviços Fim =====-->
+                 <!-- ===== Portfolio começo =====-->
+                 <section class="portfolio section" id="portfolio">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Portfolio</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="portfolio-heading padd-15">
+                                <h2>Meus ultimos projetos: </h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- ===== Portfolio item começo =====-->
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img" id="p-img">
+                                        <a href="imagens/portfolio1.png" target="_blank"><img src="imagens/portfolio1.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img" id="p-img">
+                                        <a href="imagens/portfolio2.png" target="_blank"><img src="imagens/portfolio2.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img" id="p-img">
+                                        <a href="imagens/portfolio3.png" target="_blank"><img src="imagens/portfolio3.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img" id="p-img">
+                                        <a href="imagens/portfolio4.png" target="_blank"><img src="imagens/portfolio4.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img" id="p-img">
+                                        <a href="imagens/portfolio5.png" target="_blank"><img src="imagens/portfolio5.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item padd-15">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img" id="p-img">
+                                        <a href="imagens/portfolio6.png" target="_blank"><img src="imagens/portfolio6.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===== Portfolio item fim =====-->
+                        </div>
+                    </div>
+                 </section>
+                 <!-- ===== Portfolio fim =====-->
+                 <!-- ===== Contato começo =====-->
+                 <section class="contact section" id="contact">
+                     <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Contate me</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- ===== Informações de contato inicio ====== -->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-phone"></i></div>
+                                <h4>Telefone</h4>
+                                <p>+11 99197-3628</p>
+                            </div>
+                            <!-- ===== Informações de contato fim ====== -->
+                            <!-- ===== Informações de contato inicio ====== -->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-envelope"></i></div>
+                                <h4>Email</h4>
+                                <p>altairnoberto@outlook.com.br</p>
+                            </div>
+                            <!-- ===== Informações de contato fim ====== -->
+                            <!-- ===== Informações de contato inicio ====== -->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-id-card"></i></div>
+                                <h4>Discord</h4>
+                                <p>Lyhn#9157</p>
+                            </div>
+                            <!-- ===== Informações de contato fim ====== -->
+                            <!-- ===== Informações de contato inicio ====== -->
+                            <div class="contact-info-item padd-15">
+                                <a href="https:www.github.com/lyhnnob" target="_blank"><div class="icon"><i class="fa fa-external-link"></i></div>
+                                <h4>Github</h4>
+                                <p>/lyhnnob</p></a>
+                            </div>
+                            <!-- ===== Informações de contato fim ====== -->
+                        </div>
+                        <h3 class="contact-title padd-15">ME ENVIE UM EMAIL</h3>
+                        <h4 class="contact-sub-title padd-15">E DEPOIS VAI TOMA NO CU</h4>
+                        <!-- ====== Contact Form =====-->
+                        <div class="row">
+                            <div class="contact-form padd-15">
+                            <form id="form" action="https://formsubmit.co/altairnoberto@outlook.com.br" method="POST">
+                              <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                  <div class="form-group">
+                                    <input type="text" id="campo" class="form-control" name="name" placeholder="Seu nome" required>
+                                  </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                  <div class="form-group">
+                                    <input type="email" id="campo" class="form-control" name="email" placeholder="Seu email" required>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                  <div class="form-group">
+                                    <input type="text" id="campo" class="form-control" name="title" placeholder="Titulo da mensagem">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                  <div class="form-group">
+                                    <textarea class="form-control" id="campo" name="text" placeholder="Mensagem" required></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                  <button type="submit" class="btn btn-1">Enviar Mensagem</button>
+                                </div>
+                              </div>
+                            </form>
+                            </div>
+                          </div>
+                     </div>
+                 </section>
+                 <!-- ===== Contato fim =====-->
+            </div>
+            <!-- ===== Conteudo principal fim =====-->
+            <!-- ===== Fim =====-->
+        </div>
+        <!-- ===== Container principal Fim ===== -->
+        <!-- ===== Trocar cores inicio ===== -->
+        <div class="style-switcher">
+            <div class="style-switcher-toggle s-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas "></i>
+            </div>
+            <h4>Temas</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+        <!-- ===== Trocar cores Fim ===== -->
+        <!-- ===== Arquivos JS ===== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+        <script src="js/script.js"></script>
+        <script src="js/style-switcher.js"></script>
+        </body>
+</html>
