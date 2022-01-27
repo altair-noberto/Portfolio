@@ -609,7 +609,37 @@ h3.my-profession{
     text-align: justify;
     color: var(--text-black-700);
 }
+.service{
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.service .container {
+
+position: relative;
+
+width: 1050px;
+
+display: flex;
+
+flex-wrap: wrap;
+
+justify-content: space-between;
+
+transform: skewY(-10deg);
+
+}
 
 .service .container .card
 {
