@@ -5,6 +5,7 @@
     --bg-black-50:#e8dfec;
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
+    --card-shadow-100: rgba(0,0,0,.1);
 }
 
 body{
@@ -19,6 +20,7 @@ body.dark{
         --bg-black-50:#393939;
         --text-black-900:#ffffff;
         --text-black-700:#e9e9e9;
+        --card-shadow-100: rgba(187, 187, 187, 0.1);
 }
 
 *{
@@ -619,6 +621,10 @@ h3.my-profession{
 	background: var(--bg-black-100);
 	overflow: hidden;
 }
+
+.service .container .section-title{
+    margin-bottom: 70px;
+}
 .service .container
 {
 	position: relative;
@@ -665,7 +671,7 @@ h3.my-profession{
 	width: 15px;
 	height: 100%;
 	background: var(--skin-color);
-	border-bottom: 200px solid var(--bg-black-50);
+	border-bottom: 200px solid #fff;
 	transform-origin: left;
 	transform: skewY(45deg);
 	transition: 0.5s;
@@ -710,7 +716,7 @@ h3.my-profession{
 	bottom: 0;
 	width: 100%;
 	height: 400px;
-	background: linear-gradient(transparent,transparent,rgba(0,0,0,.1));
+	background: linear-gradient(transparent,transparent,var(--card-shadow-100));
 	transform-origin: bottom;
 	transform: skewX(45deg);
 	transition: 0.5s;
@@ -803,7 +809,6 @@ h3.my-profession{
 .portfolio .container{
     padding-bottom: 40px;
 }
-
 .portfolio .portfolio-heading{
     flex: 0 0 100%;
     max-width: 100%;
@@ -814,22 +819,94 @@ h3.my-profession{
     color: var(--text-black-900);
     font-weight: 500;
 }
-
-.portfolio .portfolio-item{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    margin-bottom: 30px;
-}
-
-.portfolio .portfolio-item-inner{
+.portfolio .portfolio-box
+{
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
+    margin: 20px;
+    width: 500px;
+    height: 300px;
+    background: var(--bg-black-100);
+    overflow: hidden;
+    transition: 0.5s;
 }
 
-.portfolio .portfolio-item-inner .portfolio-img a img{
+.portfolio .portfolio-box:hover
+{
+    transform: scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+.portfolio .portfolio-box .imgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.portfolio .portfolio-box .imgBx:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,var(--skin-color),#000);
+    z-index: 1;
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+}
+.portfolio .portfolio-box:hover .imgBx:before
+{
+    opacity: 1;
+}
+.portfolio .portfolio-box .imgBx img
+{
     width: 100%;
     display: block;
+}
+.portfolio .portfolio-box .content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+}
+.portfolio .portfolio-box .content h2
+{
+    color: #fff;
+    transform: translateY(200px);
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.portfolio .portfolio-box .content p
+{
+    color: #fff;
+    transform: translateY(200px);
+    transition: 0.5s;
+    font-size: 14px;
+}
+.portfolio .portfolio-box:hover .content h2
+{
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+.portfolio .portfolio-box:hover .content p
+{
+    transform: translateY(0);
+    transition-delay: 0.7s;
 }
 
 .portfolio .portfolio-item-inner .portfolio-img a img:hover{
@@ -958,7 +1035,7 @@ h3.my-profession{
 
 @media (max-width:991px){
     .contact .contact-info-item,
-    .portfolio .portfolio-item{
+    .portfolio .portfolio-box{
         flex: 0 0 50%;
         max-width: 50%;
     }
@@ -1000,9 +1077,11 @@ h3.my-profession{
     }*/
 }
 @media (max-width:767px){
+    .contact{
+        overflow: scroll;
+    }
     .contact .contact-form .col-6,
     .contact .contact-info-item,
-    .portfolio .portfolio-item,
     .service .service-item,
     .about .about-content .experience,
     .about .about-content .education,
@@ -1010,6 +1089,10 @@ h3.my-profession{
     .about .about-content .personal-info{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .portfolio .portfolio-box{
+        flex: 0 0 80%;
+        max-width: 80%;
     }
     .service{
         display: flex;
