@@ -1,6 +1,6 @@
 /* ===== Animação de digitação ===== */
 var typed = new Typed(".typing", {
-    strings:["","lindo","cheiroso","fdp"],
+    strings:["","editor de fotos","Designer","Desenvolvedor front-end"],
     typeSpeed:100,
     backSpeed:60,
     loop:true
