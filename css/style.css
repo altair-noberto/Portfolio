@@ -800,6 +800,7 @@ h3.my-profession{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    height: 450px;
     display: block;
 }
 .portfolio .portfolio-box .imgBx img:hover
