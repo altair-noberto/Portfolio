@@ -1037,6 +1037,7 @@ h3.my-profession{
     .portfolio .portfolio-box{
         flex: 0 0 80%;
         max-width: 80%;
+        max-height: 80%;
     }
     .service{
         display: flex;
