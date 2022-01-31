@@ -1047,6 +1047,9 @@ h3.my-profession{
     .home .home-img{
         display: none;
     }
+    .portfolio{
+        overflow: scroll;
+    }
     .service{
         display: flex;
         justify-content: center;
