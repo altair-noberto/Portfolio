@@ -988,6 +988,12 @@ h3.my-profession{
     .portfolio{
         overflow-y: scroll;
     }
+    .portfolio .portfolio-box{
+        margin: 15px;
+        flex: 0 0 80%;
+        max-width: 80%;
+        max-height: 80%;
+    }
     .service{
         display: flex;
         justify-content: center;
@@ -1014,9 +1020,6 @@ h3.my-profession{
     .service .card{
         margin-bottom: 60px;
     }
-    /*.service .service-item{
-        display: contents;
-    }*/
 }
 @media (max-width:767px){
     .contact{
@@ -1036,6 +1039,7 @@ h3.my-profession{
         overflow-y: scroll;
     }
     .portfolio .portfolio-box{
+        margin: 15px;
         flex: 0 0 80%;
         max-width: 80%;
         max-height: 80%;
