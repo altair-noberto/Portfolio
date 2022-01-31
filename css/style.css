@@ -992,7 +992,6 @@ h3.my-profession{
         margin: 15px;
         flex: 0 0 80%;
         max-width: 80%;
-        max-height: 55%;
     }
     .service{
         display: flex;
@@ -1042,7 +1041,6 @@ h3.my-profession{
         margin: 15px;
         flex: 0 0 80%;
         max-width: 80%;
-        max-height: 55%;
     }
     .service{
         display: flex;
