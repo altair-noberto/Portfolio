@@ -1063,4 +1063,7 @@ h3.my-profession{
     .service .card{
 	    margin-bottom: 60px;
     }
+    .contact{
+        padding-bottom: 70px;
+    }
 }
