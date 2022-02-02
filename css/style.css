@@ -1036,7 +1036,7 @@ h3.my-profession{
     }
     .portfolio{
         overflow-y: scroll;
-        padding-bottom: 140px;
+        padding-bottom: 70px;
     }
     .portfolio .portfolio-box{
         margin: 15px;
