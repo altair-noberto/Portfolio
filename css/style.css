@@ -1036,12 +1036,12 @@ h3.my-profession{
     }
     .portfolio{
         overflow-y: scroll;
+        padding-bottom: 90px;
     }
     .portfolio .portfolio-box{
         margin: 15px;
         flex: 0 0 80%;
         max-width: 80%;
-        padding-bottom: 30px;
     }
     .service{
         display: flex;
