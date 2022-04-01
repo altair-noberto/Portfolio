@@ -491,7 +491,7 @@ h3.my-profession {
   color: var(--skin-color);
   font-weight: 600;
   text-transform: capitalize;
-  padding-left: initial;
+  padding-left: 15px;
   position: relative;
 }
 
